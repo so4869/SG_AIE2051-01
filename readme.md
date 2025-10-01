@@ -1,2 +1,2 @@
-실습이나 과제를 추가하기 위해 directory를 추가하면, 해당 project를 실행할 수 있도록 "Sync CMake Changes"를 수행하거나, Intellij의 경우 "Sync CMake Changes"가 수행될 수 있도록 "Reload CMake Project를" 실행해야 한다.  
+실습이나 과제를 추가하기 위해 directory를 추가하면, 해당 project를 실행할 수 있도록 "Sync CMake Changes"를 수행하거나, CLion의 경우 "Sync CMake Changes"가 수행될 수 있도록 "Reload CMake Project를" 실행해야 한다.  
 CMakeList.txt 파일이 복잡하지 않으므로 한번씩 읽어보면 좋다.
