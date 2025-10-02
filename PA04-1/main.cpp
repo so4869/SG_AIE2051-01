@@ -2,34 +2,37 @@
 
 using namespace std;
 
-int main(){
+int main() {
 
-    int n;
-    cin >> n;
-    int a[50][50];
+    const int ROWS = 4;
+    const int COLS = 4;
+    float exam[ROWS][COLS] = {{4.3, 1.0, 4.3, 4.0},
+                            {3.3, 3.0, 3.7, 2.7},
+                            {2.3, 2.7, 3.7, 4.3},
+                            {4.3, 3.7, 3.0, 2.7}
+    };
+
+    char vtype;
+    int index;
+
+    cin >> vtype >> index;
+
+    float sum = 0;
+
+    if (vtype == 'R') {
+        for (int i = 0; i < COLS; i++) {
+            sum += exam[index][i];
+        }
+    }
+    else if (vtype == 'C') {
+        for (int i = 0; i < ROWS; i++) {
+            sum += exam[i][index];
+        }
+    }
 
     //TODO
-    int init_val = 1;
-    a[0][0] = init_val;
+    std::cout << (vtype == 'R' ? sum / COLS : (vtype == 'C' ? sum / ROWS : 0));
 
-    for (int i = 1; i <= n; i++) {
-        for (int j = 0; j < i; j++) {
-            if (j == 0 || j == i - 1) {
-                a[i][j] = init_val;
-            }
-            else{
-                a[i][j] = a[i - 1][j - 1] + a[i - 1][j];
-            }
-        }
-    }
-
-    for (int i = 1; i <= n; i++) {
-        for (int j = 0; j < i; j++) {
-            std::cout << a[i][j] << " ";
-        }
-        std::cout << std::endl;
-    }
 
     return 0;
-
 }
