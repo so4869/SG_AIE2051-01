@@ -76,7 +76,7 @@ int main(){
 
     image_function(&image, array);
 
-    image.write("rgb.png");
+    image.write("/Volumes/d/sandbox/SG_AIE2051-01/L04-3/rgb.png");
     utils.send_image("rgb.png");
     return 0;
 }

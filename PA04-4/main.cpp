@@ -57,7 +57,7 @@ int main(){
 
 
     image_function(&image, array);
-    image.write("clock_hour.png");
+    image.write("/Volumes/d/sandbox/SG_AIE2051-01/PA04-4/clock_hour.png");
     utils.send_image("clock_hour.png");
     //cout << x2 << " " << y2 << endl;
     return 0;
