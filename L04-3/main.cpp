@@ -2,7 +2,6 @@
 #include "EliceUtils.h"
 
 #include <iostream>
-#include <png.h>
 
 using namespace std;
 
