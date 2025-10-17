@@ -1,5 +1,7 @@
 ## SG_AIE2051-01
 ### 서강대학교 컴퓨터프로그래밍II 실습코드
+#### 2025-Fall CSE2035/AIE2051-Class 1 Computer Programming II
+
 
 수업중에 작성한 실습문제 코드이다.  
 Elice에 올라온 실습문제 하나하나를 별도로 실행할 수 있도록 구성했다.
