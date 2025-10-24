@@ -57,7 +57,7 @@ void printMem(UnivMem *mems[], int n) {
 }
 
 int main() {
-	UnivMem *members[2];
+	UnivMem *members[3];
 
 	Professor p(0, 34, 818);
 	Student s(1, 20, 4.3);
