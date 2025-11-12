@@ -11,7 +11,7 @@ int main() {
     cin >> str >> word1 >> word2;
 
     //TODO
-    int idx = -1;
+    unsigned long idx = std::string::npos;
     while ((idx = str.find(word1)) != std::string::npos) {
         str.replace(idx, word1.size(), word2);
     }
